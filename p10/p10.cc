@@ -16,7 +16,7 @@ int main() {
     }
   }
 
-  long long sum = 0;
+  long sum = 0;
   for(int i : primes) {
     sum += i;
   }
