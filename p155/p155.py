@@ -4,7 +4,7 @@ from fractions import Fraction
 configs = {}
 configs[1] = Set([Fraction(1, 1)])
 
-max_c = 18
+max_c = 3
 
 for c in range(2, max_c + 1):
     configs[c] = Set()
