@@ -57,17 +57,5 @@ int main() {
             cout << current << endl;
             break;
         }
-
     }
-    /* int current = 2; */
-    /* int prev_divisors = 0; */
-    /* while(1) { */
-    /*     int current_div = numDivisors(current); */
-    /*     if ((prev_divisors + current_div) > 501) { */
-    /*         cout << current << endl; */
-    /*         break; */
-    /*     } */
-    /*     prev_divisors = current_div; */
-    /*     current++; */
-    /* } */
 }
