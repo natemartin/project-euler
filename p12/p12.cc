@@ -11,7 +11,7 @@ int numDivisors(long input) {
 
 int main() {
   long currentTriNum = 0;
-  for(int i = 1; i < 10002; i++) {
+  for(int i = 1; i < 10005; i++) {
     currentTriNum+=i;
     /* int result = numDivisors(currentTriNum); */
     /* cout << currentTriNum << " - " << result << endl; */
