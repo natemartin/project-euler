@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
   int total_laminae = 0;
-  for(int i = 2; i < 1000; i++) {
+  for(int i = 2; i < 1000000; i++) {
     auto current_ring = i;
     int remaining_tiles = 1000000;
     while (remaining_tiles > 0) {
