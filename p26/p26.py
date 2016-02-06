@@ -1,14 +1,22 @@
-def is_integer(n):
-  return int(n) == n
-def get_repeat_period(n):
-  orig = 1.0 / n
-  shifted = orig * 10
-  length = 1
-  while(not is_integer(shifted - orig)):
-    length += 1
-    shifted *= 10
-  return length
+from decimal import *
+getcontext().prec = 1000
 
+lim = 1000
 
+def get_repeat_length(x):
+  decx = Decimal(1) / Decimal(x)
+  for i in range(1, lim):
+    res = (Decimal(10**i) * decx) - decx
+    if res == res.to_integral_exact():
+      return i
+  return 0
 
-print get_repeat_period(7)
+print get_repeat_length(7)
+maxd =-1
+maxi = -1
+for i in range(1, 1000):
+  temp = get_repeat_length(i)
+  if temp > maxd:
+    maxi = i
+    maxd = temp
+print maxi
